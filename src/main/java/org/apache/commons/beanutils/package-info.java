@@ -444,6 +444,12 @@
  * <code>SUPPRESS_CLASS</code> constant of
  * <code>SuppressPropertiesBeanIntrospector</code>.</p>
  *
+ * <p>Another problematic property is the <code>enum</code> "declaringClass" property,
+ * through which you can also access that class' class loader. The <code>SuppressPropertiesBeanIntrospector</code>
+ * provides <code>SUPPRESS_DECLARING_CLASS</code> to workaround this issue.</p>
+ *
+ * <p>Both <code>SUPPRESS_CLASS</code> and <code>SUPPRESS_DECLARING_CLASS</code> are enabled by default.</p>
+ *
  * <a name="dynamic"></a>
  * <h1>3. Dynamic Beans (DynaBeans)</h1>
  *
